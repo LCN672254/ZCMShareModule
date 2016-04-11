@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZCMShareModule"
   s.version      = "0.0.1"
-  s.summary      = "A short description of ZCMShareModule."
+  s.summary      = "ZCMShareModule is a Module."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+		   ZCMShareModule is a Module. And
                    DESC
 
   s.homepage     = "https://github.com/LCN672254/ZCMShareModule"
@@ -39,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/LCN672254/ZCMShareModule", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/LCN672254/ZCMShareModule.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
+  s.exclude_files = "ZCMShareModule/ZCMShareModule*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,9 +114,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
+   s.frameworks = 'Foundation', 'UIKit'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
